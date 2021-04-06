@@ -5,17 +5,23 @@ const Register: React.FC = () => (
 <Container>
 
 <header>
-    <h1>DevLean</h1>
-    <h3>Manufatura avançada</h3>
-    <h6>Preecha os campos abaixo para efetuar o login</h6>
+    <h1>Cadastro Devlean</h1>
+    <h6>Preecha os campos abaixo para efetuar o cadastro</h6>
+
     <div>
-        <input type="text" name="E-mail" placeholder="E-mail"/>
+        <input className = "Campos" type="text" name="Nome" placeholder="Nome"/>
     </div>
     <div>
-        <input type="password" name="Senha" placeholder="Senha"/>
+        <input className = "Campos" type="text" name="Sobrenome" placeholder="Sobrenome"/>
     </div>
     <div>
-        <button className="close">Login</button>
+        <input className = "Campos" type="text" name="E-mail" placeholder="E-mail"/>
+    </div>
+    <div>
+        <input className = "Campos" type="password" name="Senha" placeholder="Senha"/>
+    </div>
+    <div className = "login-button">
+        <a className="Login" href="/register">Registrar-se</a>
     </div>
 </header>
 

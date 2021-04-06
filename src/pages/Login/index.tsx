@@ -16,7 +16,8 @@ const Login: React.FC = () => (
         <input type="password" name="Senha" placeholder="Senha"/>
     </div>
     <div className = "login-button">
-        <a className="Login" href="/register">Login</a>
+        <a className="Login" href="/">Login</a>
+        <a className="Register" href="/register">Registrar-se</a>
     </div>
 </header>
 

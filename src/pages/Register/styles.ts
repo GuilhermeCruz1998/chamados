@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import background from '../../assets/Background-cadastro.jpg';
 
 export const Container = styled.body `
 
@@ -7,19 +8,19 @@ export const Container = styled.body `
     padding: 0;
     width: 100%;
     height: 100%;
-    background-size: 100%; 
-    display: grid;
+    background: url(${background}) no-repeat center / cover;
     
     
 header{
     background-color: rgba(12, 12, 12, 0.438);
     width: 100vw;
     height: 100vh;
-    display: grid;
-    align-content: center;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
     justify-content: center;
     color: rgb(8, 25, 255);
-    gap: 10px;
+    gap: 15px;
     padding: 0;
     margin: 0;
 }
@@ -29,9 +30,7 @@ header h1{
     font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 100px;
     margin: 0;
-    padding-bottom: 0px;
     margin-bottom: 0;
-    padding-left: 50px;
     text-align: left;
 }
 header h3{
@@ -39,7 +38,6 @@ header h3{
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 50px;
     margin: 0;
-    padding-bottom: 20px;
     text-align: left;
 }
 
@@ -48,7 +46,6 @@ header h6{
     color:white;
     font-size: 20px;
     margin: 0;
-    padding-left: 30px;
 }
 
 header div input {
@@ -62,24 +59,28 @@ font-family:'Open Sans';
 font-size:15px;
 text-align: center;
 }
-
-header div button{
+.login-button{
+    
+    margin-top: 10px;
+    .Login{
     background: none;
     border: 2px solid;
     font: inherit;
     line-height: 1;
-    margin: 0.5em;
     padding: 1em 2em;
     color: white;
     transition: 1s;
-    margin-left: 200px;
+    text-decoration: none;
+    height: 100%;
   }
 
-button:hover {
+.Login:hover {
     box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
     transform: translateY(-0.25em);
-    border-color: rgb(94, 255, 0);
-    color: rgb(94, 255, 0);
+    border-color: red;
+    color: red;
   }
+}
+
 
 `;

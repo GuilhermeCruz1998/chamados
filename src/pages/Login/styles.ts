@@ -67,14 +67,36 @@ text-align: center;
     border: 2px solid;
     font: inherit;
     line-height: 1;
+    padding: 1em 3em;
+    color: white;
+    transition: 1s;
+    text-decoration: none;
+    height: 100%;
+    width: 60px;
+  }
+
+.Login:hover {
+    box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+    transform: translateY(-0.25em);
+    border-color: rgb(94, 255, 0);
+    color: rgb(94, 255, 0);
+  }
+
+  .Register{
+    background: none;
+    border: 2px solid;
+    font: inherit;
+    line-height: 1;
+    margin-left:3px;
     padding: 1em 2em;
     color: white;
     transition: 1s;
     text-decoration: none;
     height: 100%;
+    width: 60px
   }
 
-.Login:hover {
+  .Register:hover {
     box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
     transform: translateY(-0.25em);
     border-color: rgb(94, 255, 0);
